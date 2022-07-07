@@ -126,7 +126,7 @@ body{
     background-color: var(--black-bg-color);
 }
 
-.headline{
+.order-headline{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -172,7 +172,7 @@ body{
 
 /* Kinds of services */
 
-.title{
+.srvs-title, .team-title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
