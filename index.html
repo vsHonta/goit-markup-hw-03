@@ -28,8 +28,8 @@
       <div class="container container-hdr">
         <nav class="nav">
           <!--Brand Logo-->
-          <a href="" class="logo"
-            >Web<span class="hdr-logo link">Studio</span></a
+          <a href="" class="hdr-logo"
+            >Web<span class="black-logo link">Studio</span></a
           >
           <!--List of navigation links-->
           <ul class="nav-list">
@@ -65,38 +65,40 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="order-button">Заказать услуги</button>
+          <div class="order-btn-section">
+            <button type="button" class="order-button">Заказать услуги</button>
+          </div>
         </div>
       </section>
       <!--Advantages-->
       <section class="advnt">
-        <div class="container">
+        <div class="container advnt-container">
           <h2 hidden>Наши преимущества</h2>
           <ul class="advnt-list list">
-            <li>
-              <h3>Внимание к деталям</h3>
-              <p>
+            <li class="item">
+              <h3 class="advnt-list-title">Внимание к деталям</h3>
+              <p class="advnt-list-about">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
-              <h3>Пунктуальность</h3>
-              <p>
+            <li class="item">
+              <h3 class="advnt-list-title">Пунктуальность</h3>
+              <p class="advnt-list-about">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <h3>Планирование</h3>
-              <p>
+            <li class="item">
+              <h3 class="advnt-list-title">Планирование</h3>
+              <p class="advnt-list-about">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
-              <h3>Современные технологии</h3>
-              <p>
+            <li class="item">
+              <h3 class="advnt-list-title">Современные технологии</h3>
+              <p class="advnt-list-about">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -106,10 +108,10 @@
       </section>
       <!--Kinds of services-->
       <section class="srvs">
-        <div class="container">
+        <div class="container srvs-container">
           <h2 class="srvs-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="srvs-list list">
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/box1.jpg"
@@ -117,15 +119,16 @@
                   width="370"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/box2.jpg"
                   alt="женщина держит телефон в руке и водит пальцем по тачпаду "
+                  class="item"
                   width="370"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/box3.jpg"
@@ -140,42 +143,42 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="team-list list">
+            <li class="item">
               <img
                 src="./images/teammember1.jpg"
                 alt="улыбающийся мужчина средних лет"
                 width="270"
               />
-              <h3>Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+              <h3 class="team-list-title">Игорь Демьяненко</h3>
+              <p class="team-about">Product Designer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/teammember2.jpg"
                 alt="улыбающаяся женщина средних лет"
                 width="270"
               />
-              <h3>Ольга Репина</h3>
-              <p>Frontend Developer</p>
+              <h3 class="team-list-title">Ольга Репина</h3>
+              <p class="team-about">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/teammember3.jpg"
                 alt="улыбающийся мужчина средних лет"
                 width="270"
               />
-              <h3>Николай Тарасов</h3>
-              <p>Marketing</p>
+              <h3 class="team-list-title">Николай Тарасов</h3>
+              <p class="team-about">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/teammember4.jpg"
                 alt="улыбающийся мужчина средних лет"
                 width="270"
               />
-              <h3>Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <h3 class="team-list-title">Михаил Ермаков</h3>
+              <p class="team-about">UI Designer</p>
             </li>
           </ul>
         </div>
@@ -184,12 +187,12 @@
     <footer class="ftr">
       <div class="container">
         <!--Brand Logo-->
-        <a href="" class="logo link"
-          >Web<span class="ftr-logo link">Studio</span></a
+        <a href="" class="ftr-logo link"
+          >Web<span class="white-logo link">Studio</span></a
         >
         <address class="addr">
-          <ul class="list">
-            <li>
+          <ul class="addr-list list">
+            <li class="item">
               <a
                 class="addr-loc link"
                 href="https://goo.gl/maps/46HjrAHxcbsHxjKQ8"
@@ -198,12 +201,12 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="mailto:info@devstudio.com" class="addr-link link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+380961111111" class="addr-link link"
                 >+38 099 111 11 11</a
               >

@@ -36,7 +36,7 @@ h2,
 h3,
 h4,
 h5,
-h6 
+h6, 
 p {
     margin: 0
 }
@@ -79,20 +79,20 @@ img{
     margin-right: auto;
 }
 
-.logo {
+.hdr-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
+
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.13;
     letter-spacing: 0.03em;
     color: var(--special-txt-cl);
-
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 93px;
 }
 
-.hdr-logo {
+.black-logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -174,10 +174,28 @@ img{
 
 .ftr{
     background-color: var(--black-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .ftr-logo{
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.13;
+    letter-spacing: 0.03em;
+    color: var(--special-txt-cl);
+}
+
+.white-logo{
     color:#FFFFFF;
+}
+
+.addr-list .item:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .addr-loc{
@@ -204,9 +222,13 @@ img{
 /* Section with an order button */
 .order{
     background-color: var(--black-bg-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .order-headline{
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -217,6 +239,12 @@ img{
 }
 
 .order-button {
+    border: 0;
+    padding: 10px 32px;
+    margin: 0 auto;
+    min-width: 200px;
+    min-height: 50px;
+
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
@@ -228,6 +256,9 @@ img{
     color: #FFFFFF;
     background: #2196F3;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .order-button:hover, .order-button:focus {
@@ -235,22 +266,49 @@ img{
 }
 
 /* Advantages */
+.advnt-container{
+    margin-top: 107px;
+    margin-bottom: 94px;
+}
 
-.advnt-list h3 {
+.advnt-list .advnt-list-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.advnt-list p{
+.advnt-list {
+    display: flex;
+    flex-basis: 270px;
+}
+
+.advnt-list .advnt-list-about{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
 }
 
+.advnt-list .item{
+    width: 270px;
+}
+
+.advnt-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advnt-list-title{
+    margin-bottom: 10px;
+}
+
+
+
+
 /* Kinds of services */
+.srvs-container{
+    margin-bottom: 94px;
+}
 
 .srvs-title, .team-title{
     font-size: 36px;
@@ -259,13 +317,50 @@ img{
     letter-spacing: 0.03em;
 }
 
+.srvs-title {
+    margin-bottom: 50px;
+}
+
+.srvs-list {
+    display: flex;
+}
+
+.srvs-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
 /* Team */  
 
 .team{
     background-color: #F5F4FA;
+    padding-top: 94px;
 }
 
-.team h3{
+.team-title{
+    margin-bottom: 50px;
+}
+
+.team-list{
+    display: flex;
+}
+
+.team-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.team-list .item{
+    margin-bottom: 94px;
+
+    background-color: #FFFFFF ;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+.team .team-list-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -273,7 +368,9 @@ img{
     letter-spacing: 0.03em;
 }
 
-.team p{
+.team .team-about{
+    margin-bottom: 30px;
+
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;

@@ -14,34 +14,40 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <!--Brand Logo-->
-        <a href="" class="logo link"
-          >Web<span class="hdr-logo link">Studio</span></a
-        >
-        <!--List of navigation links-->
-        <ul class="list">
-          <li><a href="./index.html" class="nav-link link">Студия</a></li>
-          <li>
-            <a href="" class="nav-link-current link">Портфолио</a>
+    <header class="hdr">
+      <div class="container container-hdr">
+        <nav class="nav">
+          <!--Brand Logo-->
+          <a href="" class="hdr-logo"
+            >Web<span class="black-logo link">Studio</span></a
+          >
+          <!--List of navigation links-->
+          <ul class="nav-list">
+            <li class="item">
+              <a href="" class="nav-link link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="nav-link-current link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="item"><a href="" class="nav-link link">Контакты</a></li>
+          </ul>
+        </nav>
+        <!--Contacts-->
+        <ul class="header-contacts">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contacts-link link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="" class="nav-link link">Контакты</a></li>
+          <li>
+            <a href="tel:+380961111111" class="contacts-link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <!--Contacts-->
-      <ul class="contacts list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contacts-link link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contacts-link link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--Portfolio navgation-->
@@ -159,33 +165,35 @@
       </section>
     </main>
     <footer class="ftr">
-      <!--Brand Logo-->
-      <a href="" class="logo link"
-        >Web<span class="ftr-logo link">Studio</span></a
-      >
-      <address class="addr">
-        <ul class="list">
-          <li>
-            <a
-              class="addr-loc link"
-              href="https://goo.gl/maps/46HjrAHxcbsHxjKQ8"
-              target="_blank"
-              rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="addr-link link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="addr-link link"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <!--Brand Logo-->
+        <a href="" class="ftr-logo link"
+          >Web<span class="white-logo link">Studio</span></a
+        >
+        <address class="addr">
+          <ul class="addr-list list">
+            <li class="item">
+              <a
+                class="addr-loc link"
+                href="https://goo.gl/maps/46HjrAHxcbsHxjKQ8"
+                target="_blank"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="addr-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="addr-link link"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
