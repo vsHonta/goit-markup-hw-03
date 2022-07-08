@@ -17,32 +17,82 @@ body{
     color: var(--main-txt-cl)
 }
 
-/* Reset styles */
-.link {
+/* Reset styles start */
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul, 
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+p {
+    margin: 0
+}
+
+img{
+    display: block;
+}
+/* .link {
     text-decoration: none;
     color: currentColor;
 }
 
 .list{
     list-style: none;
-}
-
-/* Hover, Focus  */
-/* .link:hover, .link:focus{
-    color: var(--special-txt-cl);
 } */
 
+
+/* Base Styles */
+
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
 /* Header */
-.logo{
+.hdr{
+    border-bottom: 1px solid #ECECEC ;
+}
+
+.container-hdr {
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    margin-right: auto;
+}
+
+.logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.13;
     letter-spacing: 0.03em;
-    color: var(--special-txt-cl)
+    color: var(--special-txt-cl);
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
 }
 
-.hdr-logo{
+.hdr-logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -51,11 +101,41 @@ body{
     color: var(--main-txt-cl)
 }
 
-.nav-link-current{
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-link-current {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: var(--special-txt-cl);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
     color: var(--special-txt-cl);
 }
 
@@ -64,25 +144,25 @@ body{
     color: var(--special-txt-cl);
 }
 
-.nav-link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-txt-cl);
+.header-contacts{
+    display: flex;
+    align-items: center;
 }
 
- .nav-link:hover,
- .nav-link:focus{
-    color: var(--special-txt-cl);
- }
+.header-contacts .item:not(:last-child) {
+    margin-right: 50px;
+}
 
 .contacts-link{
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-txt-cl);
+
+    padding-top: 32px;
+    padding-bottom: 31px;
 }
 
 .contacts-link:hover,
