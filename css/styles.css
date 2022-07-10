@@ -382,6 +382,13 @@ img{
 /*  */
 
 /* Portfolio section buttons */
+
+.prtf-list{
+    display: flex;
+    justify-content: center;
+
+}
+
 .prtf-btn-act {
     font-family: 'Roboto';
     font-weight: 500;
@@ -403,6 +410,19 @@ img{
     letter-spacing: 0.03em;
     background-color: var(--grey-bg-color);
     cursor: pointer;
+}
+
+.prtf-btn-list {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    border: 0;
+    padding: 6px 22px;
+
+    border-radius: 4px;
+}
+
+.prtf-item-list:not(last-child){
+    margin-right: 8px;
 }
 
 .prtf-btn-act:hover, .prtf-btn-act:focus{
