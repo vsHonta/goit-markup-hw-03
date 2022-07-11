@@ -267,8 +267,8 @@ img{
 
 /* Advantages */
 .advnt-container{
-    margin-top: 107px;
-    margin-bottom: 94px;
+    padding-top: 107px;
+    padding-bottom: 94px;
 }
 
 .advnt-list .advnt-list-title {
@@ -306,8 +306,8 @@ img{
 
 
 /* Kinds of services */
-.srvs-container{
-    margin-bottom: 94px;
+.srvs{
+    padding-bottom: 94px;
 }
 
 .srvs-title, .team-title{
@@ -334,6 +334,7 @@ img{
 .team{
     background-color: #F5F4FA;
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title{
@@ -349,16 +350,19 @@ img{
 }
 
 .team-list .item{
-    margin-bottom: 94px;
+    /* margin-bottom: 94px; */
 
     background-color: #FFFFFF ;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .team .team-list-title{
-    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -369,8 +373,6 @@ img{
 }
 
 .team .team-about{
-    margin-bottom: 30px;
-
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
@@ -382,11 +384,15 @@ img{
 /*  */
 
 /* Portfolio section buttons */
+.prtf{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .prtf-list{
     display: flex;
     justify-content: center;
-
+    margin-bottom: 50px;
 }
 
 .prtf-btn-act {
@@ -413,17 +419,16 @@ img{
 }
 
 .prtf-btn-list {
-    margin-top: 94px;
-    margin-bottom: 50px;
     border: 0;
     padding: 6px 22px;
 
     border-radius: 4px;
 }
 
-.prtf-item-list:not(last-child){
+.prtf-list-item:not(:last-child) {
     margin-right: 8px;
 }
+
 
 .prtf-btn-act:hover, .prtf-btn-act:focus{
     background-color: #188CE8;
@@ -438,8 +443,7 @@ img{
 
 .examples-list .item {
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* border: 1px solid #EEEEEE; */
 }
 
 .examples-list .exampl-title{
@@ -454,24 +458,23 @@ img{
     color: var(--secondary-txt-cl);
 }
 
+.exampl-text-group{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE; ;
+}
+
 .exampl-title{
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
 }
-
-.exampl-text{
-    margin-left: 24px;
-    margin-bottom: 20px;
-}
-
-
 
 .examples-list{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
 }
+
+
 
 .examples-list .item:not(:nth-child(3n)){
     margin-right: 30px;
